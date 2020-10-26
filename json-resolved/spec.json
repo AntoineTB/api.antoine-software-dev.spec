@@ -26,6 +26,7 @@
   "paths" : {
     "/contact" : {
       "post" : {
+        "tags" : [ "public" ],
         "summary" : "send me an email through the contact form",
         "operationId" : "sendContactForm",
         "requestBody" : {
