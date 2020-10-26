@@ -1,0 +1,17 @@
+{
+  "name": "api-antoine-software-dev-spec",
+  "version": "1.0.0",
+  "description": "OpenAPI spec for https://api.antoine-softare.dev",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoinetb/api.antoine-software-dev.spec.git"
+  },
+  "author": "https://github.com/antoinetb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/antoinetb/api.antoine-software-dev.spec/issues"
+  },
+  "homepage": "https://github.com/antoinetb/api.antoine-software-dev.spec#readme"
+}
