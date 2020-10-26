@@ -10,8 +10,6 @@
   },
   "author": "https://github.com/antoinetb",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/antoinetb/api.antoine-software-dev.spec/issues"
-  },
+  "bugs": {"url": "https://github.com/antoinetb/api.antoine-software-dev.spec/issues"},
   "homepage": "https://github.com/antoinetb/api.antoine-software-dev.spec#readme"
 }
