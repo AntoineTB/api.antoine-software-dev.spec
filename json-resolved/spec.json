@@ -1,0 +1,77 @@
+{
+  "openapi" : "3.0.0",
+  "info" : {
+    "title" : "https://api.antoine-software.dev",
+    "description" : "Backend API for https://antoine-software.dev",
+    "license" : {
+      "name" : "MIT",
+      "url" : "https://opensource.org/licenses/MIT"
+    },
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "https://virtserver.swaggerhub.com/AntoineTB/api.antoine-software.dev/1.0.0",
+    "description" : "SwaggerHub API Auto Mocking"
+  } ],
+  "tags" : [ {
+    "name" : "admins",
+    "description" : "Secured Admin-only calls"
+  }, {
+    "name" : "developers",
+    "description" : "Operations available to regular developers"
+  }, {
+    "name" : "public",
+    "description" : "Endpoints available to the public"
+  } ],
+  "paths" : {
+    "/contact" : {
+      "post" : {
+        "summary" : "send me an email through the contact form",
+        "operationId" : "sendContactForm",
+        "requestBody" : {
+          "description" : "ContactForm to submit",
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/ContactForm"
+              }
+            }
+          }
+        },
+        "responses" : {
+          "201" : {
+            "description" : "item created"
+          },
+          "400" : {
+            "description" : "invalid input, object invalid"
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "ContactForm" : {
+        "required" : [ "body", "contactInfo", "name", "subject" ],
+        "type" : "object",
+        "properties" : {
+          "name" : {
+            "type" : "string",
+            "example" : "John Smith"
+          },
+          "contactInfo" : {
+            "type" : "string",
+            "example" : "john.smith@foo.bar"
+          },
+          "subject" : {
+            "type" : "string",
+            "example" : "Did you know a pony has four legs?"
+          },
+          "body" : {
+            "type" : "string"
+          }
+        }
+      }
+    }
+  }
+}
