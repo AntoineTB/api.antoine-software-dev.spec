@@ -7,11 +7,13 @@
       "name" : "MIT",
       "url" : "https://opensource.org/licenses/MIT"
     },
-    "version" : "1.0.0"
+    "version" : "2.0.1"
   },
   "servers" : [ {
-    "url" : "https://virtserver.swaggerhub.com/AntoineTB/api.antoine-software.dev/1.0.0",
+    "url" : "https://virtserver.swaggerhub.com/AntoineTB/api.antoine-software.dev/2.0.0",
     "description" : "SwaggerHub API Auto Mocking"
+  }, {
+    "url" : "/v2"
   } ],
   "tags" : [ {
     "name" : "admins",
@@ -36,8 +38,14 @@
               "schema" : {
                 "$ref" : "#/components/schemas/ContactForm"
               }
+            },
+            "application/x-www-form-urlencoded" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/ContactForm"
+              }
             }
-          }
+          },
+          "required" : true
         },
         "responses" : {
           "201" : {
